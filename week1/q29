@@ -1,0 +1,42 @@
+/*Write a program that reads two numbers and displays:
+
+- their sum
+- their difference
+- their product
+- their quotient
+- their remainder when integer input is used
+
+Test with ordinary values and then consider what happens when the second value
+is zero. Conditions for safely handling zero will be introduced in Week 2.
+*/
+import java.util.Scanner;
+public class calculator 
+{
+    public static void main(String[] args) throws Exception 
+    {
+        Scanner scan =new Scanner(System.in);
+        System.out.print("enter number 1: ");
+        int num1 =scan.nextInt();
+        System.out.print("enter number 2: ");
+        int num2 =scan.nextInt();
+        System.out.println("Sum = "+(num1+num2));
+        System.out.println("Difference = "+(num1-num2));
+        System.out.println("Product = "+(num1*num2));
+
+        if(num2!=0) 
+        {
+            System.out.println("Quotient ="+(num1/num2));
+            System.out.println("Remainder ="+(num1 % num2));
+        }
+        else 
+        {
+            System.out.println("please enter valid values");
+            System.out.println("please enter valid values");
+        }
+
+        }
+            
+        
+}
+
+
